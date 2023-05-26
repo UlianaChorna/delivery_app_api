@@ -1,12 +1,11 @@
-const express = require("express")
-const serverless = require('serverless-http')
+const express = require("express");
+const serverless = require('serverless-http');
 const app = express();
 const dotenv = require("dotenv")
 const mongoose = require('mongoose');
-const Shop = require("./functions/shop.js")
-const Product = require("./functions/product.js")
-
-const UserCart = require("./functions/userCart.js")
+const Shop = require("./shop.js")
+const Product = require("./product.js")
+const UserCart = require("./userCart.js")
 
 dotenv.config()
 // mongoose.set('strictQuery', true);
